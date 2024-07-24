@@ -1,0 +1,1185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="fltk">
+      <UniqueIdentifier>{adaaedb7-8211-46c0-ae32-ec1b3013e26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\hdr">
+      <UniqueIdentifier>{629f8564-8ba0-4d45-af44-5ba871fcf84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src">
+      <UniqueIdentifier>{ba4a56c3-d3b5-42d9-a2bc-333b222bc9be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src\drivers">
+      <UniqueIdentifier>{320bc57c-7f78-49c8-b580-3bbb351acafa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src\drivers\GDI">
+      <UniqueIdentifier>{74b1b239-0555-42e7-8afc-74a1518eb64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src\drivers\PostScript">
+      <UniqueIdentifier>{395a66cb-9a06-4156-bedc-c2ac1e388dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src\drivers\WinAPI">
+      <UniqueIdentifier>{176dc478-bcf0-45fd-b441-b18356507284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src\xutf8">
+      <UniqueIdentifier>{86116e96-bae2-4945-96d4-00f494a0dc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk\src\xutf8\headers">
+      <UniqueIdentifier>{d6cf05c9-e147-4174-b41b-00d1190a2fd3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Copy_Surface_Driver.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_arci.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_color.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_font.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_image.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_line_style.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_rect.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_vertex.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\GDI\Fl_GDI_Image_Surface_Driver.cpp">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\WinAPI\fl_WinAPI_platform_init.cpp">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\WinAPI\Fl_WinAPI_Printer_Driver.cpp">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\WinAPI\Fl_WinAPI_Screen_Driver.cpp">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\WinAPI\Fl_WinAPI_System_Driver.cpp">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\WinAPI\Fl_WinAPI_Window_Driver.cpp">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\PostScript\Fl_PostScript.cpp">
+      <Filter>fltk\src\drivers\PostScript</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\drivers\PostScript\Fl_PostScript_image.cpp">
+      <Filter>fltk\src\drivers\PostScript</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\xutf8\case.c">
+      <Filter>fltk\src\xutf8</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\xutf8\is_right2left.c">
+      <Filter>fltk\src\xutf8</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\xutf8\is_spacing.c">
+      <Filter>fltk\src\xutf8</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_absolute.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_expand.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_ext.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_isdir.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_list.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_match.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\filename_setext.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_abort.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_add_idle.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Adjuster.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_arc.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_arg.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_ask.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Bitmap.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Box.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_boxtype.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Browser.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Browser_.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Browser_load.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Chart.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Check_Browser.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Check_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Choice.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Clock.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_color.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Color_Chooser.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_compose.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_contrast.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Copy_Surface.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Counter.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_cursor.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_curve.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Device.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Dial.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_diamond_box.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_display.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_dnd_win32.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Double_Window.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_draw.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_draw_arrow.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_draw_pixmap.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_encoding_latin1.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_encoding_mac_roman.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_engraved_label.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_File_Browser.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_File_Chooser.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_File_Chooser2.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_file_dir.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_File_Icon.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_File_Input.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Flex.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_font.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_get_key_win32.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_get_system_colors.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_gleam.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_grab.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Graphics_Driver.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Grid.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Group.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_gtk.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Help_View.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Image.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Image_Surface.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Input.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Input_.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Input_Choice.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Int_Vector.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_labeltype.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Light_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_lock.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu_.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu_add.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu_Bar.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu_global.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Menu_Window.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Message.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Multi_Label.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Native_File_Chooser.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Native_File_Chooser_WIN32.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_open_uri.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_oval_box.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_overlay.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Overlay_Window.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_own_colormap.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_oxy.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Pack.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Paged_Device.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Pixmap.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_plastic.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Positioner.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Preferences.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Printer.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Progress.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_read_image.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_rect.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Repeat_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Return_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Roller.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_round_box.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Round_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_rounded_box.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Scheme.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Scheme_Choice.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Screen_Driver.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Scroll.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_scroll_area.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Scrollbar.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_set_font.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_shadow_box.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Shared_Image.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_shortcut.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Shortcut_Button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_show_colormap.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Single_Window.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Slider.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Spinner.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_String.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_string_functions.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_symbols.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Sys_Menu_Bar.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_System_Driver.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Table.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Table_Row.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tabs.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Terminal.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Text_Buffer.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Text_Display.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Text_Editor.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tile.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tiled_Image.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Timeout.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tooltip.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tree.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tree_Item.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tree_Item_Array.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Tree_Prefs.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_utf8.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Valuator.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Value_Input.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Value_Output.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Value_Slider.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\fl_vertex.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_visual.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Widget.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Widget_Surface.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_win32.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Window.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Window_Driver.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Window_fullscreen.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Window_hotspot.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Window_iconize.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_Wizard.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_XBM_Image.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\Fl_XPM_Image.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\flstring.c">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\numericsort.c">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\print_button.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\scandir_win32.c">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\screen_xywh.cpp">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\vsnprintf.c">
+      <Filter>fltk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\src\xutf8\mk_wcwidth.c">
+      <Filter>fltk\src\xutf8</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fltk\hdr\config.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Enumerations.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\filename.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Adjuster.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Anim_GIF_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_ask.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_attr.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Bitmap.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_BMP_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Box.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Browser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Browser_.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Cairo.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Cairo_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_callback_macros.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_casts.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Chart.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Check_Browser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Check_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Choice.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Clock.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Color_Chooser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_config.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Copy_Surface.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Counter.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Device.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Dial.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Double_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_draw.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Export.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_File_Browser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_File_Chooser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_File_Icon.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_File_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Fill_Dial.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Fill_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Flex.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Float_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_FormsBitmap.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_FormsPixmap.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Free.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_GIF_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Gl_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Graphics_Driver.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Grid.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Group.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Help_Dialog.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Help_View.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Hold_Browser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Hor_Fill_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Hor_Nice_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Hor_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Hor_Value_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_ICO_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Image_Surface.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Input_.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Input_Choice.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Int_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_JPEG_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Light_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Line_Dial.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Menu.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Menu_.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Menu_Bar.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Menu_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Menu_Item.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Menu_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_message.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Multi_Browser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Multi_Label.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Multiline_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Multiline_Output.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Native_File_Chooser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Nice_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Object.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Output.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Overlay_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Pack.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Paged_Device.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_PDF_File_Surface.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Pixmap.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Plugin.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_PNG_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_PNM_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Positioner.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_PostScript.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Preferences.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Printer.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Progress.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Radio_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Radio_Light_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Radio_Round_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Rect.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Repeat_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Return_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_RGB_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Roller.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Round_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Round_Clock.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Scheme.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Scheme_Choice.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Scroll.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Scrollbar.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Secret_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Select_Browser.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Shared_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Shortcut_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_show_colormap.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_show_input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Simple_Counter.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Single_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Spinner.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_string_functions.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_SVG_File_Surface.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_SVG_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Sys_Menu_Bar.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Table.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Table_Row.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tabs.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Terminal.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Text_Buffer.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Text_Display.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Text_Editor.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tile.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tiled_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Timer.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Toggle_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Toggle_Light_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Toggle_Round_Button.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tooltip.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tree.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tree_Item.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tree_Item_Array.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Tree_Prefs.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_types.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\fl_utf8.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Valuator.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Value_Input.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Value_Output.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Value_Slider.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Widget.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Widget_Surface.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Window.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_Wizard.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_XBM_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\Fl_XPM_Image.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\forms.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\gl.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\gl_draw.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\gl2opengl.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\glu.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\glut.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\mac.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\math.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\names.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\platform.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\platform_types.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\wayland.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\win32.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\x.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\hdr\x11.h">
+      <Filter>fltk\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\GDI\Fl_Font.h">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\GDI\Fl_GDI_Copy_Surface_Driver.h">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver.h">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\GDI\Fl_GDI_Image_Surface_Driver.h">
+      <Filter>fltk\src\drivers\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\WinAPI\Fl_WinAPI_Screen_Driver.h">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\WinAPI\Fl_WinAPI_System_Driver.h">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\WinAPI\Fl_WinAPI_Window_Driver.h">
+      <Filter>fltk\src\drivers\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\flstring.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_Screen_Driver.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_System_Driver.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\drivers\PostScript\Fl_PostScript_Graphics_Driver.h">
+      <Filter>fltk\src\drivers\PostScript</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_Window_Driver.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\fl_cmap.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_Timeout.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\print_button.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\utf8_internal.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\fastarrow.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\mediumarrow.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\slowarrow.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\fl_oxy.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_Int_Vector.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_String.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_Sys_Menu_Bar_Driver.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\Fl_Message.h">
+      <Filter>fltk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\xutf8\headers\case.h">
+      <Filter>fltk\src\xutf8\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\src\xutf8\headers\spacing.h">
+      <Filter>fltk\src\xutf8\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
