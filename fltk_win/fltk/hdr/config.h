@@ -1,4 +1,4 @@
-/* config.h.  Generated from configh.in by configure.  */
+/* config.h.  Generated from configh.cmake.in by CMake.  */
 /*
  * Configuration file for the Fast Light Tool Kit (FLTK).
  *
@@ -37,6 +37,9 @@
  * Where to find files...
  */
 
+#define FLTK_DATADIR "C:/Program Files (x86)/FLTK/share/fltk"
+#define FLTK_DOCDIR "C:/Program Files (x86)/FLTK/share/doc/fltk"
+
 /*
  * BORDER_WIDTH:
  *
@@ -60,7 +63,7 @@
  * OpenGL, and FLTK will be smaller.
  */
 
-#define HAVE_GL 0
+#define HAVE_GL 1
 
 /*
  * HAVE_GL_GLU_H:
@@ -69,7 +72,7 @@
  * (many broken Mesa RPMs do not...)
  */
 
-#define HAVE_GL_GLU_H 0
+#define HAVE_GL_GLU_H 1
 
 /*
  * HAVE_GLXGETPROCADDRESSARB:
@@ -77,7 +80,7 @@
  * Do you have the OpenGL glXGetProcAddressARB() function?
  */
 
-#define HAVE_GLXGETPROCADDRESSARB 0
+/* #undef HAVE_GLXGETPROCADDRESSARB */
 
 /*
  * USE_COLORMAP:
@@ -142,7 +145,7 @@
  * Do we have the X11 Xregion.h header file ?
  */
 
-#define HAVE_X11_XREGION_H 1
+#define HAVE_X11_XREGION_H 0
 
 /*
  * HAVE_GL_OVERLAY:
@@ -174,7 +177,7 @@
 
 #define U16 unsigned short
 #define U32 unsigned
-#define U64 unsigned long
+/* #undef U64 */
 
 /*
  * HAVE_DIRENT_H, HAVE_SYS_NDIR_H, HAVE_SYS_DIR_H, HAVE_NDIR_H,
@@ -183,25 +186,25 @@
  * Where is <dirent.h> (used only by fl_file_chooser and scandir).
  */
 
-#define HAVE_DIRENT_H 1
+/* #undef HAVE_DIRENT_H */
 /* #undef HAVE_SYS_NDIR_H */
 /* #undef HAVE_SYS_DIR_H */
 /* #undef HAVE_NDIR_H */
-#define HAVE_SCANDIR 1
-#define HAVE_SCANDIR_POSIX 1
+/* #undef HAVE_SCANDIR */
+/* #undef HAVE_SCANDIR_POSIX */
 
 /*
  * Possibly missing sprintf-style functions:
  */
 
-#define HAVE_VSNPRINTF 1
-#define HAVE_SNPRINTF 1
+/* #undef HAVE_VSNPRINTF */
+/* #undef HAVE_SNPRINTF */
 
 /*
  * String functions and headers...
  */
 
-#define HAVE_STRINGS_H 1
+/* #undef HAVE_STRINGS_H */
 #define HAVE_STRCASECMP 1
 /* #undef HAVE_STRLCAT */
 /* #undef HAVE_STRLCPY */
@@ -219,7 +222,7 @@
  * Whether or not select() call has its own header file.
  */
 
-#define HAVE_SYS_SELECT_H 1
+#define HAVE_SYS_SELECT_H 0
 
 /*
  * HAVE_SYS_STDTYPES_H:
@@ -243,7 +246,7 @@
  * Whether or not POSIX setenv() is available from stdlib.h.
  */
 
-#define HAVE_SETENV 1
+#define HAVE_SETENV 0
 
 /*
  * HAVE_TRUNC:
@@ -257,9 +260,9 @@
  * Do we have various image libraries?
  */
 
-//#define HAVE_LIBPNG 1
-//#define HAVE_LIBZ 1
-//#define HAVE_LIBJPEG 1
+#define HAVE_LIBPNG 1
+#define HAVE_LIBZ 1
+#define HAVE_LIBJPEG 1
 
 /*
  * Which header file do we include for libpng?
@@ -268,7 +271,7 @@
  * There is no other choice.
  */
 
-#define HAVE_PNG_H 0
+#define HAVE_PNG_H 1
 
 /*
  * Do we have the png_xyz() functions?
@@ -282,14 +285,14 @@
  * Do we have POSIX threading?
  */
 
-#define HAVE_PTHREAD 1
-#define HAVE_PTHREAD_H 1
+/* #undef HAVE_PTHREAD */
+/* #undef HAVE_PTHREAD_H */
 
 /*
  * Do we have PTHREAD_MUTEX_RECURSIVE?
  */
 
-#define HAVE_PTHREAD_MUTEX_RECURSIVE 1
+/* #undef HAVE_PTHREAD_MUTEX_RECURSIVE */
 
 /*
  * Do we have the ALSA library?
@@ -315,8 +318,8 @@
  * Do we have the dlsym() function and header?
  */
 
-#define HAVE_DLFCN_H 1
-#define HAVE_DLSYM 1
+#define HAVE_DLFCN_H 0
+#define HAVE_DLSYM 0
 
 /*
  * Do we want print support?
@@ -329,12 +332,11 @@
  */
 
 #ifdef _WIN32
-#define USE_GDIPLUS 0
+#define USE_GDIPLUS 1
 #endif
 
 /*
  * Do we want filename handling and a filechooser?
- * *FIXME* FL_CFG_NO_FILESYSTEM_SUPPORT not yet implemented in configure !
  */
 
 /* #undef FL_CFG_NO_FILESYSTEM_SUPPORT */
