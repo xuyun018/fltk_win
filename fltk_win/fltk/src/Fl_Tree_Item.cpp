@@ -139,7 +139,7 @@ void Fl_Tree_Item::show_self(const char *indent) const {
   const char *thelabel = label() ? label() : "(NULL)";
   printf("%s-%s (%d children, this=%p, parent=%p, prev=%p, next=%p, depth=%d)\n",
          indent,thelabel,children(),(void*)this, (void*)_parent,
-         _prev_sibling, _next_sibling, depth());
+         (void*)_prev_sibling, (void*)_next_sibling, depth());
   if ( children() ) {
     char *i2 = new char [strlen(indent)+3]; // 2 + nul byte
     strcpy(i2, indent);
@@ -400,6 +400,7 @@ Fl_Tree_Item *Fl_Tree_Item::add(const Fl_Tree_Prefs &prefs,
   \see Fl_Tree::insert()
 */
 Fl_Tree_Item *Fl_Tree_Item::insert(const Fl_Tree_Prefs &prefs, const char *new_label, int pos) {
+  (void)prefs;                 // quiet warnings unused params
   Fl_Tree_Item *item = new Fl_Tree_Item(_tree);
   item->label(new_label);
   item->_parent = this;
@@ -1143,11 +1144,34 @@ void Fl_Tree_Item::draw(int X, int &Y, int W, Fl_Tree_Item *itemfocus,
       Y += prefs.openchild_marginbottom();              // offset below open child tree
     }
     if ( ! lastchild ) {
-      // Special 'clipped' calculation. (intentional variable shadowing)
-      int is_clipped = ((child_y_start < tree_top) && (Y < tree_top)) ||
-                       ((child_y_start > tree_bot) && (Y > tree_bot));
-      if (render && !is_clipped )
-        draw_vertical_connector(hconn_x, child_y_start, Y, prefs);
+        // Draw vertical connector between this item and the bottom of its children.
+        //
+        //           o Aaa            <- Item we're drawing has >20k children.
+        //   ytop ¡ú  :  :.. 0001
+        //           :  :.. 0002
+        //           :  :       } ~20k items
+        //           :  :.. 19998
+        //        ©°©¤©¤:©¤©¤:.. 19999 ©¤©¤©´
+        //        ©¦  :  :.. 20000   ©¦
+        //        ©¦  :  :.. 20001   ©¦ <- visible screen
+        //        ©¦  :  :.. 20002   ©¦    area
+        //        ©¸©¤©¤:©¤©¤:.. 20003 ©¤©¤©¼
+        //           :  :.. 20004
+        //           :
+        //   ybot ¡ú  :  ¡û we're drawing this long vertical connector
+        //           :
+        //           o Bbb
+        //
+        int ytop = child_y_start;
+        int ybot = Y;
+        int is_clipped = ((ytop < tree_top) && (ybot < tree_top)) ||   // completely off top of scrn? clip
+            ((ytop > tree_bot) && (ybot > tree_bot));     // completely off bot of scrn? clip
+        if (render && !is_clipped) {
+            // Clip vert line to within screen area
+            ytop = (ytop < tree_top) ? tree_top : ytop;
+            ybot = (ybot > tree_bot) ? tree_bot : ybot;
+            draw_vertical_connector(hconn_x, ytop, ybot, prefs);
+        }
     }
   }
 }
@@ -1190,11 +1214,13 @@ int Fl_Tree_Item::event_on_user_icon(const Fl_Tree_Prefs &prefs) const {
 
 /// Was event anywhere on the item?
 int Fl_Tree_Item::event_on_item(const Fl_Tree_Prefs &prefs) const {
+    (void)prefs;       // quiet warnings unused params
     return(event_inside(_xywh) ? 1 : 0);
 }
 
 /// Was event on the label() of this item?
 int Fl_Tree_Item::event_on_label(const Fl_Tree_Prefs &prefs) const {
+  (void)prefs;       // quiet warnings unused params
   if ( is_visible() && is_active() ) {
     return(event_inside(_label_xywh) ? 1 : 0);
   } else {
@@ -1433,9 +1459,9 @@ Fl_Tree_Item *Fl_Tree_Item::prev_displayed(Fl_Tree_Prefs &prefs) {
 /// See if item and all its parents are open() and visible().
 /// \returns
 ///    1 -- item and its parents are open() and visible()
-///    0 -- item (or one of its parents) are invisible or close()ed.
+///    0 -- item or one of its parents are either not visible() or close()ed.
 ///
-int Fl_Tree_Item::visible_r() const {
+int Fl_Tree_Item::is_visible_r() const {
   if ( !visible() ) return(0);
   for (const Fl_Tree_Item *p=parent(); p; p=p->parent())// move up through parents
     if (!p->visible() || p->is_close()) return(0);      // any parent not visible or closed?
